@@ -5,11 +5,13 @@ import Loadable from 'react-loadable';
 import Loading from './components/Loading';
 const AsyncHome = Loadable({
   loader: () => import('./components/Home'),
-  loading: Loading
+  loading: Loading,
+  delay: 200
 })
 const AsyncUser = Loadable({
   loader: () => import('./components/User'),
-  loading: Loading
+  loading: Loading,
+  delay: 200
 })
 
 ReactDOM.render(
